@@ -44,5 +44,5 @@ if submit_button:
             st.error(f"An error occurred: {e}")
 
 # Main entry point
-if _name_ == "_main_":
+if __name__ == "_main_":
     st.write("Enter a prompt to generate an image.")
