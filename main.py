@@ -27,13 +27,12 @@ if submit_button:
         try:
             # Generate the image using OpenAI's DALL-E API
             response = client.images.generate(
-                model="dall-e-2",
+                model="dall-e-3",
                 prompt=prompt,
                 size=size,
                 quality="standard",
-                n=1,
+                n=1
             )
-
             # Extract the URL of the generated image
             image_url = response.data[0].url
 
