@@ -17,8 +17,8 @@ st.title("DALL·E Image Generation")
 # Input form for prompt and image size
 with st.form(key='form'):
     prompt = st.text_input(label='Enter text prompt for image generation')
-    size = st.selectbox('Select size of the image', 
-                        ('512x512', '1024x1024'))
+    #size = st.selectbox('Select size of the image', 
+    #                    ('512x512', '1024x1024'))
     submit_button = st.form_submit_button(label='Generate Image')
 
 # Generate image when the form is submitted
@@ -27,9 +27,9 @@ if submit_button:
         try:
             # Generate the image using OpenAI's DALL-E API
             response = client.images.generate(
-                model="dall-e-2",
+                model="dall-e-3",
                 prompt=prompt,
-                size=size,
+                size='1024x1024',
                 quality="standard",
                 n=1,
             )
