@@ -12,7 +12,7 @@ client = openai.OpenAI(
 )
 
 # Streamlit App
-st.title("DALL·E Image Generation")
+st.title("DIY Pro Image Generation")
 
 # Input form for prompt and image size
 with st.form(key='form'):
